@@ -13,10 +13,10 @@ import pygame
 import numpy as np
 from pygame import mixer
 
-COLOR_BG = (10, 10, 10,)
-COLOR_GRID = (40, 40, 40)
-COLOR_DIE_NEXT = (170, 170, 170)
-COLOR_ALIVE_NEXT = (255, 255, 255)
+COLOR_BG = (0, 179, 255)
+COLOR_GRID = (3, 101, 143)
+COLOR_DIE_NEXT = (50, 166, 40)
+COLOR_ALIVE_NEXT = (52, 209, 38)
 
 pygame.init()
 
