@@ -71,9 +71,14 @@ def main():
                     running = not running
                     update(screen, cells, 15)
                     pygame.display.update()
+                    
             if pygame.mouse.get_pressed()[0]:
                 pos = pygame.mouse.get_pos()
-                cells[pos[1] // 15, pos[0] // 15] = 1
+                row, col = pos[1] // 15, pos[0] // 15
+                if cells[row, col] == 1:
+                    cells[row, col] = 0
+                else:
+                    cells[row, col] = 1
                 update(screen, cells, 15)
                 pygame.display.update()
 
@@ -84,6 +89,7 @@ def main():
             pygame.display.update()
 
         time.sleep(0.001)
+
 
 
 if __name__ == "__main__":
